@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="container">
+     <div id="text">
+       <p>Some text</p>
+       <p>Some text</p>
+       <p>Some text</p>
+       <p>Some text</p>
+       <p>Some text</p>
+     </div>
+     <div id="buttons">
+       <form name="center_button">
+         <input type="button" class="center_button" value="Редагувати" name="edit">
+         <input type="button" class="center_button" value="Стилізувати" name="style">
+       </form>
+     </div>
+       <div class="bottom" id="bottom_bg"></div>
+       <div  class="bottom" id="edit">
+         <textarea id="edit_area"></textarea>
+         <form name="edit_button">
+           <input type="button" name="save" value="Зберегти">
+           <input type="button" name="add" value="Додати">
+         </form>
+       </div>
+       <div class="bottom" id="style">
+          <div class="style_size">
+              <p>Розмір тексту:</p> 
+           <form name="style_font_size">
+               <input type="radio" name="size" value="12">12
+               <input type="radio" name="size" value="14">14
+               <input type="radio" name="size" value="16" checked>16
+               <input type="radio" name="size" value="18">18
+               <input type="radio" name="size" value="20">20
+           </form>   
+           </div>   
+           <div class="font">
+               <p>Лігатура: </p>
+               <form name="style_font">
+                   <select name="type">
+                       <option value="Times New Roman">Times New Roman</option>
+                       <option value="Arial">Arial</option>
+                       <option value="Tahoma">Tahoma</option>
+                       <option value="Vergana">Vergana</option>
+                   </select>
+               </form>               
+           </div>   
+           <div class="font_color">
+               <form name="style_color">
+                   <input type="button" class="style_color" id="text_color" value="Колір тексту">
+                   <input type="button" class="style_color" id="bg_color" value="Колір фону">
+               </form>
+               <div id="select_color">
+                  <form name="select_color"></form>
+                   <div class="color" id="color1" value="#13AB9B"></div>
+                   <div class="color" id="color2" value="#880000"></div>
+                   <div class="color" id="color3" value="#35CC78"></div>
+                   <div class="color" id="color4" value="#46ED03"></div>
+                   <div class="color" id="color5" value="#898889"></div>
+                   <div class="color" id="color6" value="#FE0000"></div>
+                   <div class="color" id="color7" value="#0100FE"></div>
+                   <div class="color" id="color8" value="#870088"></div>
+                   <div class="color" id="color9" value="#888901"></div>
+               </div>
+           </div>
+           <form name="font_style">
+               <input type="checkbox" name="bold">Жирний текст
+               <input type="checkbox" name="em">Курсивний текст
+           </form>
+       </div>
+       <div id="add_window">
+           <h1>Виберіть що саме ви хочете додати:</h1>
+                <form name="add_buttons">
+                   <input type="radio" name="add" id="show_table"  >Таблиця
+                   <input type="radio" name="add" id="show_list" name="list" value="list">Список
+               </form>
+           <div id="table">
+               <p>Введіть кількість рядків таблиці: <input type="number" class="style_number_button" id="numberTd"></p>
+               <p>Введіть кількість стовпців таблиці: <input type="number" class="style_number_button" id="numberTr"></p>
+               <h3>Стилізуйте таблицю:</h3>
+                <p>Введіть ширину комірки: <input type="number" class="style_number_button" id="trWidth"></p>
+                 <p>Введіть висоту комірки: <input type="number" class="style_number_button" id="tdHeight"></p>
+                 <div class="table_bottom">
+                      <p>Товщина: <input type="number" class="style_number_button" id="border_px"></p>
+                      <p>Тип лінії:</p>
+                      <select name="table_line_type" id="table_line_type" class="select_button_style">
+                          <option value="solid">solid</option>
+                          <option value="dotted">dotted</option>
+                          <option value="outset">outset</option>
+                          <option value="inset">inset</option>
+                          <option value="double">double</option>
+                      </select>
+                      <p>Колір лінії: </p>
+                      <select name="table_line_color" id="table_line_color" class="select_button_style">
+                          <option value="black">black</option>
+                          <option value="red">red</option>
+                          <option value="green">green</option>
+                      </select>
+                 </div>
+                 <input type="button"  value="Створити таблицю" id="create_table">
+           </div>
+           <div id="list">
+               <p>Введіть кількість елементів у списку: <input type="number" class="style_number_button" id="number_li"></p>
+               <div class="list_type">
+                   <p>Тип маркування списку:</p>
+                   <select name="list_type" class="select_button_style" id="list_type">
+                       <option value="circle">circle</option>
+                       <option value="disc">disc</option>
+                       <option value="none">none</option>
+                   </select>
+               </div>
+               <input type="button" value="Створити список" id="create_list">
+           </div>
+       </div>
+   </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

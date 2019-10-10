@@ -1,0 +1,173 @@
+body{      
+  background: url(../img/Lenovo-wallpaper-6_DcyKDyp.jpg);
+}
+
+#text{
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 500px;
+  height: 400px;
+  background: rgba(0,128,0,0.5);
+  border: 5px solid white;
+  border-radius: 20px;
+  color: white; 
+}
+#buttons{
+  width: 300px;
+  margin: 20px auto;
+}
+.center_button{
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: 0 3px  #0AF1F1;
+    font-weight: bold;
+    font-size: 14px
+}
+.bottom{  
+  margin: 0 auto;
+  width: 500px;
+  height: 400px;
+  background: rgba(0,0,255,0.5);
+  border: 5px solid white;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+#bottom_bg{
+    display: block;
+}
+#edit{
+    display: none;
+}
+#edit_area{  
+  resize: none;
+  width: 450px;
+  height: 300px;
+}
+.style_size{
+    display: flex;
+    
+}
+.style_size p{
+    margin: 0;
+}
+#style{
+    color: white;
+    display: none;
+    position: relative;
+}
+.font{
+    display: flex;
+}
+.font select{
+    margin: 15px;
+    background: #91EF91;
+    border-radius: 10px;
+}
+#edit{
+  margin: 0 auto;
+  width: 500px;
+  height: 400px;
+  background: blue;
+  border: 5px solid white;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+#edit_area{
+  margin: auto;
+  width: 450px;
+  height: 300px;
+}
+#add_window{
+    display: none;
+    width: 800px;
+    height: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background:   rgba(0,0,255,0.5);
+    border: 5px solid green;
+    border-radius: 30px;
+    color: white;
+    padding: 30px
+}
+.table_bottom{
+    display: flex;
+}
+#table{
+    display: none;
+}
+.list_type{
+    display: flex;
+}
+#list{
+    display: none
+}
+#select_color{
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    position: absolute;
+    display: none;
+    flex-wrap: wrap;
+    right: 50px
+}
+.color{
+    width: 33px;
+    height: 33px;
+    box-sizing: border-box; 
+    border: 1px solid black
+}
+#color1{
+    background: #13AB9B;
+}
+#color2{
+    background: #880000;
+}
+#color3{
+    background: #35CC78;
+}
+#color4{
+    background: #46ED03;
+}
+#color5{
+    background: #898889;
+}
+#color6{
+    background: #FE0000;
+}
+#color7{
+    background: #0100FE;
+}
+#color8{
+    background: #870088;
+}
+#color9{
+    background: #888901;
+}
+.style_color{
+    margin: 15px 0;
+    border-radius: 10px;
+}
+.style_number_button{
+    width: 50px;
+    border-radius: 10px;
+}
+.select_button_style{
+    height: 25px;
+    margin:  11px ;
+    background: #91EF91;
+    border-radius: 10px
+}
+#create_table{
+    border-radius: 10px;
+    margin: 20px 0;
+}
+#create_list{
+    border-radius: 10px;
+    margin: 20px 0;
+}
+}
